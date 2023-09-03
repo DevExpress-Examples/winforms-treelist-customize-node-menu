@@ -3,11 +3,28 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E847)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Implementing context menus for TreeList nodes
+# WinForms TreeList - Customize node context menu
+
+This example demonstrates how to handle the [PopupMenuShowing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraTreeList.TreeList.PopupMenuShowing) event to add new commands to the node menu:
+
+```csharp
+private void treeList1_PopupMenuShowing(object sender, PopupMenuShowingEventArgs e) {
+    if(e.Menu is TreeListNodeMenu) {
+        treeList1.FocusedNode = ((TreeListNodeMenu)e.Menu).Node;
+        e.Menu.Items.Add(new DevExpress.Utils.Menu.DXMenuItem("Edit", bbEdit_ItemClick));
+        e.Menu.Items.Add(new DevExpress.Utils.Menu.DXMenuItem("Add child", bbAddChild_ItemClick));
+        e.Menu.Items.Add(new DevExpress.Utils.Menu.DXMenuItem("Delete", bbDelete_ItemClick));
+    }
+}
+```
 
 
-<p>This example demonstrates how to implement a popup menu for XtraTreeList's nodes</p>
+## Files to Review
 
-<br/>
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
 
 
+## Documentation
+
+* [Add Custom Menu Items to the Standard Menus](https://docs.devexpress.com/WindowsForms/5701/controls-and-libraries/tree-list/feature-center/context-menus/add-custom-menu-items-to-the-standard-menus)
+* [TreeList Context Menus(https://docs.devexpress.com/WindowsForms/322/controls-and-libraries/tree-list/feature-center/context-menus)
