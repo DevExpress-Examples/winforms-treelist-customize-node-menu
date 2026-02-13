@@ -30,7 +30,7 @@ private void treeList1_PopupMenuShowing(object sender, PopupMenuShowingEventArgs
 * [Add Custom Menu Items to the Standard Menus](https://docs.devexpress.com/WindowsForms/5701/controls-and-libraries/tree-list/feature-center/context-menus/add-custom-menu-items-to-the-standard-menus)
 * [TreeList Context Menus](https://docs.devexpress.com/WindowsForms/322/controls-and-libraries/tree-list/feature-center/context-menus)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-treelist-customize-node-menu&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-treelist-customize-node-menu&~~~was_helpful=no)
 
